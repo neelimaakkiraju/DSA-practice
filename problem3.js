@@ -20,9 +20,10 @@ for(let i = str3.length-1;i>=0;i--){
     result+= str3[i];
     
 }
-
-if(result === inputStr){
-        return console.log("true")
-    }else{
-        return console.log("false")
-    }
+let final = result === inputStr? "true" : "false"
+// if(result === inputStr){
+//         return console.log("true")
+//     }else{
+//         return console.log("false")
+//     }
+console.log(final)
