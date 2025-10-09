@@ -21,3 +21,4 @@ function fib2(n){
 }
 
 console.log(fib2(8))
+
