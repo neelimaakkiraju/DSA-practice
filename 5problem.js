@@ -12,7 +12,7 @@ function fib(num){
 fib(3)
 
 
-//fibonacci  series using recursion
+//fibonacci series using recursion
 
 function fib2(n){
     if(n<=1) return n;
