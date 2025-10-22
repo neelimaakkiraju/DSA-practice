@@ -13,20 +13,20 @@ function maxProfit1(prices) {
 }
 
 
-// // Greedy Algorithm
-// const maxProfit = function (prices) {
-//   let minStockPurchasePrice = prices[0] || 0;
-//   let profit = 0;
+// Greedy Algorithm
+const maxProfit = function (prices) {
+  let minStockPurchasePrice = prices[0] || 0;
+  let profit = 0;
 
-//   for (let i = 1; i < prices.length; i++) {
-//     if (prices[i] < minStockPurchasePrice) {
-//       minStockPurchasePrice = prices[i];
-//     }
+  for (let i = 1; i < prices.length; i++) {
+    if (prices[i] < minStockPurchasePrice) {
+      minStockPurchasePrice = prices[i];
+    }
 
-//     profit = Math.max(profit, prices[i] - minStockPurchasePrice);
-//   }
+    profit = Math.max(profit, prices[i] - minStockPurchasePrice);
+  }
 
-//   return profit;
-// };
+  return profit;
+};
 
 console.log(maxProfit1([7,5,4,8,2]));
