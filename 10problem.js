@@ -6,10 +6,13 @@ function maxProfit(arr){
         for(let j = i+1; j< arr.length;j++){
             const currentProfit = arr[j]- arr[i]
             if(currentProfit > resultProfit) resultProfit = currentProfit;
+            console.log(i,j)
         }
+         
     }
     return resultProfit
+   
 }
 
-console.log(maxProfit([7,5,4,8,2]))
+console.log(maxProfit([7,1,8,3,6,4]))
 
