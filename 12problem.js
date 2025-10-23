@@ -1,7 +1,4 @@
-/**
- * @param {string} s
- * @return {boolean}
- */
+
 var hasSameDigits = function(s) {
     let digits = new Array(s.length);
     for (let i = 0; i < s.length; ++i) digits[i] = s.charCodeAt(i) - 48;
@@ -15,3 +12,9 @@ var hasSameDigits = function(s) {
     }
 
     return digits.length === 2 && digits[0] === digits[1];
+};
+
+
+console.log(hasSameDigits("3902"))
+console.log(hasSameDigits("862"))
+console.log(hasSameDigits("11"))
