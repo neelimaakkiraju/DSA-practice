@@ -1,10 +1,6 @@
 // letter combination of a phone number
 
 
-/**
- * @param {string} digits
- * @return {string[]}
- */
 var letterCombinations = function(digits) {
     if (!digits.length) {
         return [];
