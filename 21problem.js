@@ -5,7 +5,7 @@ function removeDuplicates(arr){
     return result
 }
 
-console.log(removeDuplicates([1,1,2,2,2,3,4,6,6,6,3,2,2,3]))
+console.log(removeDuplicates([2,3,5,6,7,7,5,5,3,8,9,9]))
 
 
 //using linked list
@@ -29,4 +29,14 @@ function removeDuplicates(nums) {
 
 let nums = [1, 1, 2];
 let k = removeDuplicates(nums);
-console.log(k, nums); // Output: 2 [1, 2, "_"]
+console.log(k, nums); 
+
+
+
+
+//example sort
+let arr2  = [9,3,5,2,9,,6,7,6]
+
+let result = arr2.sort()
+
+console.log(result[0])
