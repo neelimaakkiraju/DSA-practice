@@ -1,9 +1,9 @@
 //find kth smallest element in array
 
 function findElement(arr, elem){
-    let arrSort = arr.sort()
+    let arrSort = arr.sort((a,b)=>a-b)
     console.log(arrSort)
-    let result = arrSort[elem]
+    let result = arrSort[elem - 1]
 
     return result
 }
