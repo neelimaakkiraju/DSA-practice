@@ -18,3 +18,23 @@ function findPair(arr,num){
 }
 
 console.log(findPair([5, 20, 3, 2, 5, 80],78))
+
+
+//using hash mapping
+
+function findPair(arr, x) {
+  let set = new Set();
+
+  for (let num of arr) {
+    if (set.has(num + x) || set.has(num - x)) {
+      return true;
+    }
+
+    set.add(num);
+  }
+
+
+  return false;
+}
+
+console.log(findPair([5, 20, 3, 2, 5, 80], 78)); 
