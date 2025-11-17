@@ -1,19 +1,19 @@
-// fibonacci generator
+//fibonacci generator
 
 
-// function generateFibonacci(num){
+function generateFibonacci(num){
 
-//     let result = []
-//     for(let i = 0; i<num.length;i++){
-//           for(let j = i+1; j<num.length;j++){
-//             let final = num[i]+ num[j]
-//             result.push(final)
-//           }
-//     }
-//     return result
-// }
+    let result = []
+    for(let i = 0; i<num.length;i++){
+          for(let j = i+1; j<num.length;j++){
+            let final = num[i]+ num[j]
+            result.push(final)
+          }
+    }
+    return result
+}
 
-// console.log(generateFibonacci(5))
+console.log(generateFibonacci(5))
 
 
 
