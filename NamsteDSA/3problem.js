@@ -18,7 +18,7 @@ function findLargest(arr){
 }
 
 
-console.log(findLargest([-5,-3,-8]))
+console.log(findLargest([5,7,8,9,3,4,10]))
 
 
 // using while loop
