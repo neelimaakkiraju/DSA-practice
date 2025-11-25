@@ -3,7 +3,7 @@
 
 function findLargest(arr){
 
-    let largest = 0
+    let largest = -Infinity;
     
     for(let i = 0; i<arr.length;i++){
 
@@ -18,7 +18,7 @@ function findLargest(arr){
 }
 
 
-console.log(findLargest([4,8,3,9,2,1,6]))
+console.log(findLargest([-5,-3,-8]))
 
 
 // using while loop
@@ -27,7 +27,7 @@ console.log(findLargest([4,8,3,9,2,1,6]))
 function largestElement(arr){
     let i = 0;
 
-    let isLargest = 0
+    let isLargest = arr[0]
 
     while(i<arr.length){
         if(arr[i]> isLargest){
@@ -39,4 +39,4 @@ function largestElement(arr){
     return isLargest
 }
 
-console.log(largestElement([4,6,8,2]))
+console.log(largestElement([-4,-6,-8,-2]))
