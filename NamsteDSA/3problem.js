@@ -30,7 +30,7 @@ function largestElement(arr){
     let isLargest = arr[0]
 
     while(i<arr.length){
-        if(arr[i]> isLargest){
+        if(arr[i] < isLargest){
             isLargest = arr[i]
         }
 
@@ -39,4 +39,4 @@ function largestElement(arr){
     return isLargest
 }
 
-console.log(largestElement([-4,-6,-8,-2]))
+console.log(largestElement([3,2,6,8,9]))
