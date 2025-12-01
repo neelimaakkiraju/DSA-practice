@@ -2,7 +2,7 @@
 
 
 
-
+// brute force
 function findPalindrome(num){
     let result = num.toString()
     let final = result.split().reverse().join()
