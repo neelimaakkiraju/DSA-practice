@@ -5,9 +5,11 @@
 function reverseString(str){
     let strLen = str.length;
     let halfLen = Math.floor(strLen/2)
-
+    console.log(halfLen)
     for(let i =0 ; i<halfLen;i++){
+     
         let temp = str[i]
+       
         str[i] = str[strLen-1-i]
         str[strLen-1-i] = temp
        
