@@ -19,3 +19,5 @@ function sellStocks(prices){
 console.log(sellStocks([7,1,5,3,6,4]))
 
 console.log(sellStocks([7,6,4,3,1,10]))
+
+console.log(sellStocks([7,5,6,4]))
