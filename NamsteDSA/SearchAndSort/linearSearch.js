@@ -9,4 +9,4 @@ function findElement(arr , target){
     }return -1
 }
 
-console.log(findElement([2,4,6,7,2], 8))
+console.log(findElement([2,4,6,7,2], 2))
