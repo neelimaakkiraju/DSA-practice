@@ -10,7 +10,7 @@ function mergeSort(arr){
 
     let result = mergeSort(...right, ...left)
 
-    return result
+    return result;
 }
 
 console.log(mergeSort([3,6,8,9,3,4,2,1]))
