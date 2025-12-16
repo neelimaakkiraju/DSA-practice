@@ -12,3 +12,7 @@ function myList(){
     this.head = null;
     this.size = 0
 }
+
+MyLinkedList.prototype.get = function(index) {
+    
+};
