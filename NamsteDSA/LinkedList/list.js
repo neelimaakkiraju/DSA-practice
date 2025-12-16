@@ -16,3 +16,11 @@ function myList(){
 MyLinkedList.prototype.get = function(index) {
     
 };
+
+
+MyLinkedList.prototype.addAtHead = function(val) {
+    let newNode = new Node(val)
+    newNode.next = this.head;
+    this.head = newNode
+    this.size++
+};
