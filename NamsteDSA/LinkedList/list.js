@@ -12,6 +12,16 @@ var MyLinkedList = function(){
 
 }
 
+MyLinkedList.prototype.get = function(index) {
+    if(index<0 || index>= size) return -1
+    let curr = this.head;
+    for(let i = 0; i<inde;i++){
+        curr= curr.next;
+    }
+    return curr.val;
+};
+
+
 MyLinkedList.prototype.addAtHead = function(val) {
     let newNode = new Node(val)
     newNode.next = this.head;
