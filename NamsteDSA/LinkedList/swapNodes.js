@@ -56,3 +56,6 @@ let result = swapPairs(head);
 
 console.log(listToArray(result)); 
 // OUTPUT: [2, 1, 4, 3, 6, 5]
+
+
+
