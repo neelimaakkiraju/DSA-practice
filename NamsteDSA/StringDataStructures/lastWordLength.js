@@ -13,6 +13,8 @@ function findLastWordLen(str){
 console.log(findLastWordLen("Hello world"))
 
 
+// using double loop
+
 function lengthOfLastWord(str){
     let n = str.length - 1;
 
@@ -34,6 +36,34 @@ function lengthOfLastWord(str){
         }else{
            break
         }
+    }
+
+    return count;
+}
+
+console.log(lengthOfLastWord("Neelima   n"))
+
+
+
+
+// optimized code with double loop
+function lengthOfLastWord(str){
+    let n = str.length - 1;
+
+    while(n>=0){
+        if(str[n] !== " "){
+           break;
+        }
+        --n
+    }
+
+    let count = 0;
+
+    while(n>=0){
+        if(str[n] === " ") break;
+            --n;
+            count++
+        
     }
 
     return count;
