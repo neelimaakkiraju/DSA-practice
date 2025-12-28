@@ -1,16 +1,15 @@
 // find the word containing the given character
 
+// using built in method
 
 function findWordChar(str, char){
-    str = str.split(" ");
+    str = str.split(" ")
     let result = []
    
     for(let i = 0; i<str.length;i++){
        
         if(str[i].includes(char)){
            result.push(i)
-        }else{
-            return []
         }
     }
 
@@ -18,4 +17,4 @@ function findWordChar(str, char){
    
 }
 
-console.log(findWordChar("luffy is still joyboy", "x"))
+console.log(findWordChar("luffy is still joyboy", "z"))
