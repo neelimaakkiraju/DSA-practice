@@ -70,3 +70,27 @@ function lengthOfLastWord(str){
 }
 
 console.log(lengthOfLastWord("Neelima   n"))
+
+
+
+// using sinlge loop
+
+function findWordLen(str){
+    let n = str.length -1;
+
+    let count = 0;
+
+    while(n >= 0){
+        if(str[n] !== " "){
+            count++
+        }
+        else if(count > 0){
+            break;
+        }
+        n--;
+    }
+
+    return count
+}
+
+console.log(findWordLen("hello world print"))
