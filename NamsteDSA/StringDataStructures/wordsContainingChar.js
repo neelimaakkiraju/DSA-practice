@@ -19,6 +19,7 @@ function findWordChar(str, char){
 
 console.log(findWordChar("luffy is still joyboy", "z"))
 
+// without using built in method
 
 function findWordChar(str, char){
     str = str.split(" ")
