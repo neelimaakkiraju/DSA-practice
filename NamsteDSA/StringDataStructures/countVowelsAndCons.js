@@ -35,7 +35,7 @@ console.log(findMaxCount("successes"))
 
 
 
-// approach 2
+// approach 2 optimized method
 
 
 function findMaxCount2(str) {
@@ -61,4 +61,4 @@ function findMaxCount2(str) {
 }
 
 
-console.log(findMaxCount2("successes"))
+console.log(findMaxCount2("aeiaeia"))
