@@ -1,6 +1,8 @@
 // count balanced substrings in given string
 
 
+
+// approache 1
 function balancedString(str){
     let R = 0;
     let L = 0;
@@ -8,7 +10,7 @@ function balancedString(str){
 
      for(let i = 0 ; i < str.length; i++){
         if(str[i] === "R"){
-            R = 1;
+            R++
         
         }else{
             L++
