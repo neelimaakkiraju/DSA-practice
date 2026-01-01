@@ -30,3 +30,32 @@ function balancedString(str){
 console.log(balancedString("RLRRLLRLRL"))
 
 console.log(balancedString("RLRRRLLRLL"))
+
+
+
+//Approach 2 -----> Optimized method
+
+function balancedString2(str){
+     let temp = 0;
+     let count = 0;
+
+     for(let i = 0 ; i < str.length; i++){
+        if(str[i] === "R"){
+             temp++
+        
+        }else{
+          temp--
+        }
+
+        if(temp === 0){
+            count++;
+        }
+     }
+
+     return count;
+}
+
+
+console.log(balancedString2("RLRRLLRLRL"))
+
+console.log(balancedString2("RLRRRLLRLL"))
