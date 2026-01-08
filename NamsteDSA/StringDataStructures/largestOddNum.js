@@ -11,3 +11,25 @@ var largestOddNumber = function(num) {
     }
     return "";
 };
+
+
+console.log(largestOddNumber("575534"))
+
+
+// using while loop
+
+function findOddNum(str){
+    let i = str.length-1;
+
+    while(i>=0){
+        if(Number(str[i] % 2 !== 0)){
+           return str.substring(0,i+1);
+
+        }
+
+        i--;
+    }
+    return ""
+}
+
+console.log(findOddNum("10133890"))
