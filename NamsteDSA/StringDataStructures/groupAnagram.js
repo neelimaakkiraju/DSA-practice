@@ -6,7 +6,7 @@ function groupAnagram(str){
     for(let i = 0; i<str.length;i++){
       
         let sortedArr = str[i].split("").sort().join("")
-          
+          console.log(sortedArr)
         if(!map[sortedArr]){
             map[sortedArr] = [str[i]]
         }
