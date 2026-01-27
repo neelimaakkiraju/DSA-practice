@@ -29,3 +29,16 @@ var search = function(arr, target) {
 
 console.log(search([1,5,8,9,4,3], 8))
 
+
+// brute force approach
+
+function searchNum(nums, target) {
+    for(let i = 0;i<nums.length;i++){
+        if(nums[i]===target){
+            return i
+        }
+    }
+    return +"-1"
+};
+
+console.log(searchNum([2,6,5,9,4,5],9))
