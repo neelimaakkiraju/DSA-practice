@@ -63,3 +63,25 @@ var searchRange = function(arr, target) {
     }
     return ans;
 };
+
+
+// using linear search
+
+
+
+var searchRange = function(arr, target) {
+    let first = -1;
+    let last = -1;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            if (first === -1) first = i;
+            last = i;
+        }
+    }
+
+    return [first, last];
+};
+
+
+console.log(searchRange([5,6,7,7,9,9],9))
